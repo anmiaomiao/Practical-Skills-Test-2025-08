@@ -1,2 +1,6 @@
 Human reference: Homo_sapiens.GRCh38.dna.toplevel.fa.gz
 Database Source: Ensembl (release 114)
+
+#输出文件
+kneaddata.txt：根据去宿主（hr文件夹）下的*.log日志，提取每个样本的 reads 数量统计信息，汇总表格
+sum.txt：提取kneaddata.txt文件关键信息列（样本ID、去除宿主前的 reads数、去宿主后保留reads数）
