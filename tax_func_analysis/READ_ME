@@ -1,0 +1,5 @@
+*   $SAMPLENAME_profile.tsv —— 包含物种相对丰度及读数统计信息的 MetaPhlAn 分析结果表（tsv格式）
+*   $SAMPLENAME_0.log —— 运行日志
+*   $SAMPLENAME_2_genefamilies.tsv —— 基因家族丰度表（已归一化为CPM）
+*   $SAMPLENAME_3_reactions.tsv —— 代谢反应丰度表（已归一化为CPM）
+*   $SAMPLENAME_4_pathabundance.tsv —— 代谢通路丰度表（已归一化为CPM）
