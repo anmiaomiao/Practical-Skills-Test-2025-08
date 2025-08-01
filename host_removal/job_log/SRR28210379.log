@@ -1,0 +1,91 @@
+07/16/2025 09:53:38 PM - kneaddata.knead_data - INFO: Running kneaddata v0.12.2
+07/16/2025 09:53:38 PM - kneaddata.knead_data - INFO: Output files will be written to: /data/gaoyunyun/project/anmiaomiao/temp/hr
+07/16/2025 09:53:38 PM - kneaddata.knead_data - DEBUG: Running with the following arguments: 
+verbose = True
+input1 = temp/qc/SRR28210379_1.fastq.gz
+input2 = temp/qc/SRR28210379_2.fastq.gz
+unpaired = None
+output_dir = /data/gaoyunyun/project/anmiaomiao/temp/hr
+scratch_dir = 
+reference_db = /data/gaoyunyun/project/anmiaomiao/kneaddata/ath/tair10
+bypass_trim = True
+output_prefix = SRR28210379
+threads = 3
+processes = 1
+trimmomatic_quality_scores = -phred33
+bmtagger = False
+bypass_trf = True
+run_trf = False
+fastqc_start = False
+fastqc_end = False
+store_temp_output = False
+remove_intermediate_output = True
+cat_final_output = False
+log_level = DEBUG
+log = temp/hr/SRR28210379.log
+trimmomatic_path = None
+run_trim_repetitive = False
+max_memory = 500m
+trimmomatic_options = None
+sequencer_source = NexteraPE
+bowtie2_path = /data/gaoyunyun/miniconda3/envs/kneaddata/bin/bowtie2
+bowtie2_options = --very-sensitive --dovetail --phred33
+decontaminate_pairs = strict
+reorder = True
+serial = True
+bmtagger_path = None
+trf_path = None
+match = 2
+mismatch = 7
+delta = 7
+pm = 80
+pi = 10
+minscore = 50
+maxperiod = 500
+fastqc_path = None
+remove_temp_output = True
+input = /data/gaoyunyun/project/anmiaomiao/temp/qc/SRR28210379_1.fastq.gz /data/gaoyunyun/project/anmiaomiao/temp/qc/SRR28210379_2.fastq.gz
+discordant = True
+
+07/16/2025 09:53:38 PM - kneaddata.utilities - INFO: Decompressing gzipped file ...
+07/16/2025 09:56:14 PM - kneaddata.utilities - INFO: Decompressed file created: /data/gaoyunyun/project/anmiaomiao/temp/hr/decompressed_dtwl2ghe_SRR28210379_1.fastq
+07/16/2025 09:56:14 PM - kneaddata.utilities - INFO: Decompressing gzipped file ...
+07/16/2025 09:59:20 PM - kneaddata.utilities - INFO: Decompressed file created: /data/gaoyunyun/project/anmiaomiao/temp/hr/decompressed_hsabyn64_SRR28210379_2.fastq
+07/16/2025 09:59:20 PM - kneaddata.utilities - INFO: Reformatting file sequence identifiers ...
+07/16/2025 10:01:37 PM - kneaddata.utilities - INFO: Reformatting file sequence identifiers ...
+07/16/2025 10:04:53 PM - kneaddata.utilities - INFO: READ COUNT: raw pair1 : Initial number of reads ( /data/gaoyunyun/project/anmiaomiao/temp/hr/reformatted_identifiers7k6hle2o_decompressed_dtwl2ghe_SRR28210379_1 ): 67864030.0
+07/16/2025 10:05:30 PM - kneaddata.utilities - INFO: READ COUNT: raw pair2 : Initial number of reads ( /data/gaoyunyun/project/anmiaomiao/temp/hr/reformatted_identifiers78hnezf7_decompressed_hsabyn64_SRR28210379_2 ): 67864030.0
+07/16/2025 10:05:30 PM - kneaddata.knead_data - INFO: Bypass trimming
+07/16/2025 10:06:11 PM - kneaddata.utilities - INFO: READ COUNT: trimmed single : Total reads after trimming ( /data/gaoyunyun/project/anmiaomiao/temp/hr/reformatted_identifiers7k6hle2o_decompressed_dtwl2ghe_SRR28210379_1 ): 67864030.0
+07/16/2025 10:06:51 PM - kneaddata.utilities - INFO: READ COUNT: trimmed single : Total reads after trimming ( /data/gaoyunyun/project/anmiaomiao/temp/hr/reformatted_identifiers78hnezf7_decompressed_hsabyn64_SRR28210379_2 ): 67864030.0
+07/16/2025 10:06:51 PM - kneaddata.run - INFO: Decontaminating ...
+07/16/2025 10:06:51 PM - kneaddata.utilities - DEBUG: Checking input file to bowtie2 : /data/gaoyunyun/project/anmiaomiao/temp/hr/reformatted_identifiers7k6hle2o_decompressed_dtwl2ghe_SRR28210379_1
+07/16/2025 10:06:51 PM - kneaddata.utilities - DEBUG: Checking input file to bowtie2 : /data/gaoyunyun/project/anmiaomiao/temp/hr/reformatted_identifiers78hnezf7_decompressed_hsabyn64_SRR28210379_2
+07/16/2025 10:06:51 PM - kneaddata.utilities - INFO: Running bowtie2 ... 
+07/16/2025 10:06:51 PM - kneaddata.utilities - INFO: Execute command: kneaddata_bowtie2_discordant_pairs --bowtie2 /data/gaoyunyun/miniconda3/envs/kneaddata/bin/bowtie2 --threads 3 -x /data/gaoyunyun/project/anmiaomiao/kneaddata/ath/tair10 --mode strict --bowtie2-options "--very-sensitive --dovetail --phred33" -1 /data/gaoyunyun/project/anmiaomiao/temp/hr/reformatted_identifiers7k6hle2o_decompressed_dtwl2ghe_SRR28210379_1 -2 /data/gaoyunyun/project/anmiaomiao/temp/hr/reformatted_identifiers78hnezf7_decompressed_hsabyn64_SRR28210379_2 --un-pair /data/gaoyunyun/project/anmiaomiao/temp/hr/SRR28210379_tair10_bowtie2_paired_clean_%.fastq --al-pair /data/gaoyunyun/project/anmiaomiao/temp/hr/SRR28210379_tair10_bowtie2_paired_contam_%.fastq --un-single /data/gaoyunyun/project/anmiaomiao/temp/hr/SRR28210379_tair10_bowtie2_unmatched_%_clean.fastq --al-single /data/gaoyunyun/project/anmiaomiao/temp/hr/SRR28210379_tair10_bowtie2_unmatched_%_contam.fastq --reorder -S /dev/null
+07/16/2025 11:19:38 PM - kneaddata.utilities - DEBUG: b'135728060 reads; of these:\n  135728060 (100.00%) were unpaired; of these:\n    135716737 (99.99%) aligned 0 times\n    5014 (0.00%) aligned exactly 1 time\n    6309 (0.00%) aligned >1 times\n0.01% overall alignment rate\npair1_aligned : 6426\npair2_aligned : 6426\npair1_unaligned : 67857604\npair2_unaligned : 67857604\norphan1_aligned : 0\norphan2_aligned : 0\norphan1_unaligned : 0\norphan2_unaligned : 0\n'
+07/16/2025 11:19:38 PM - kneaddata.utilities - DEBUG: Checking output file from bowtie2 : /data/gaoyunyun/project/anmiaomiao/temp/hr/SRR28210379_tair10_bowtie2_paired_clean_1.fastq
+07/16/2025 11:19:38 PM - kneaddata.utilities - DEBUG: Checking output file from bowtie2 : /data/gaoyunyun/project/anmiaomiao/temp/hr/SRR28210379_tair10_bowtie2_paired_clean_2.fastq
+07/16/2025 11:19:38 PM - kneaddata.run - INFO: Total contaminate sequences in file ( /data/gaoyunyun/project/anmiaomiao/temp/hr/SRR28210379_tair10_bowtie2_paired_contam_1.fastq ) : 6426.0
+07/16/2025 11:19:38 PM - kneaddata.run - INFO: Total contaminate sequences in file ( /data/gaoyunyun/project/anmiaomiao/temp/hr/SRR28210379_tair10_bowtie2_paired_contam_2.fastq ) : 6426.0
+07/16/2025 11:19:38 PM - kneaddata.run - INFO: Total contaminate sequences in file ( /data/gaoyunyun/project/anmiaomiao/temp/hr/SRR28210379_tair10_bowtie2_unmatched_1_contam.fastq ) : 0.0
+07/16/2025 11:19:38 PM - kneaddata.run - INFO: Total contaminate sequences in file ( /data/gaoyunyun/project/anmiaomiao/temp/hr/SRR28210379_tair10_bowtie2_unmatched_2_contam.fastq ) : 0.0
+07/16/2025 11:20:17 PM - kneaddata.utilities - INFO: READ COUNT: decontaminated tair10 pair1 : Total reads after removing those found in reference database ( /data/gaoyunyun/project/anmiaomiao/temp/hr/SRR28210379_tair10_bowtie2_paired_clean_1.fastq ): 67857604.0
+07/16/2025 11:20:54 PM - kneaddata.utilities - INFO: READ COUNT: decontaminated tair10 pair2 : Total reads after removing those found in reference database ( /data/gaoyunyun/project/anmiaomiao/temp/hr/SRR28210379_tair10_bowtie2_paired_clean_2.fastq ): 67857604.0
+07/16/2025 11:21:57 PM - kneaddata.utilities - INFO: READ COUNT: final pair1 : Total reads after merging results from multiple databases ( /data/gaoyunyun/project/anmiaomiao/temp/hr/SRR28210379_paired_1.fastq ): 67857604.0
+07/16/2025 11:22:44 PM - kneaddata.utilities - INFO: READ COUNT: final pair2 : Total reads after merging results from multiple databases ( /data/gaoyunyun/project/anmiaomiao/temp/hr/SRR28210379_paired_2.fastq ): 67857604.0
+07/16/2025 11:22:44 PM - kneaddata.utilities - WARNING: Unable to remove file: /data/gaoyunyun/project/anmiaomiao/temp/hr/SRR28210379_tair10_bowtie2_paired_clean_1.fastq
+07/16/2025 11:22:44 PM - kneaddata.utilities - WARNING: Unable to remove file: /data/gaoyunyun/project/anmiaomiao/temp/hr/SRR28210379_tair10_bowtie2_paired_clean_2.fastq
+07/16/2025 11:22:44 PM - kneaddata.utilities - INFO: READ COUNT: decontaminated tair10 orphan1 : Total reads after removing those found in reference database ( /data/gaoyunyun/project/anmiaomiao/temp/hr/SRR28210379_tair10_bowtie2_unmatched_1_clean.fastq ): 0.0
+07/16/2025 11:22:44 PM - kneaddata.utilities - INFO: READ COUNT: final orphan1 : Total reads after merging results from multiple databases ( /data/gaoyunyun/project/anmiaomiao/temp/hr/SRR28210379_unmatched_1.fastq ): 0.0
+07/16/2025 11:22:44 PM - kneaddata.utilities - WARNING: Unable to remove file: /data/gaoyunyun/project/anmiaomiao/temp/hr/SRR28210379_tair10_bowtie2_unmatched_1_clean.fastq
+07/16/2025 11:22:44 PM - kneaddata.utilities - INFO: READ COUNT: decontaminated tair10 orphan2 : Total reads after removing those found in reference database ( /data/gaoyunyun/project/anmiaomiao/temp/hr/SRR28210379_tair10_bowtie2_unmatched_2_clean.fastq ): 0.0
+07/16/2025 11:22:44 PM - kneaddata.utilities - INFO: READ COUNT: final orphan2 : Total reads after merging results from multiple databases ( /data/gaoyunyun/project/anmiaomiao/temp/hr/SRR28210379_unmatched_2.fastq ): 0.0
+07/16/2025 11:22:44 PM - kneaddata.utilities - WARNING: Unable to remove file: /data/gaoyunyun/project/anmiaomiao/temp/hr/SRR28210379_tair10_bowtie2_unmatched_2_clean.fastq
+07/16/2025 11:22:54 PM - kneaddata.knead_data - INFO: 
+Final output files created: 
+/data/gaoyunyun/project/anmiaomiao/temp/hr/SRR28210379_paired_1.fastq
+/data/gaoyunyun/project/anmiaomiao/temp/hr/SRR28210379_paired_2.fastq
+/data/gaoyunyun/project/anmiaomiao/temp/hr/SRR28210379_unmatched_1.fastq
+/data/gaoyunyun/project/anmiaomiao/temp/hr/SRR28210379_unmatched_2.fastq
+
