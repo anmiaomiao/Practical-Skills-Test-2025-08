@@ -1,0 +1,41 @@
+Read1 before filtering:
+total reads: 36875344
+total bases: 5531301600
+Q20 bases: 5391327874(97.4694%)
+Q30 bases: 5109170271(92.3683%)
+
+Read2 before filtering:
+total reads: 36875344
+total bases: 5531301600
+Q20 bases: 5306830026(95.9418%)
+Q30 bases: 4923679372(89.0148%)
+
+Read1 after filtering:
+total reads: 36773465
+total bases: 5515297134
+Q20 bases: 5378467986(97.5191%)
+Q30 bases: 5098523762(92.4433%)
+
+Read2 after filtering:
+total reads: 36773465
+total bases: 5515297134
+Q20 bases: 5297719356(96.055%)
+Q30 bases: 4917036330(89.1527%)
+
+Filtering result:
+reads passed filter: 73546930
+reads failed due to low quality: 197500
+reads failed due to too many N: 6258
+reads failed due to too short: 0
+reads with adapter trimmed: 34762
+bases trimmed due to adapters: 1446014
+
+Duplication rate: 11.7561%
+
+Insert size peak (evaluated by paired-end reads): 269
+
+JSON report: temp/qc/SRR28210377_fastp.json
+HTML report: temp/qc/SRR28210377_fastp.html
+
+fastp -i /data/gaoyunyun/project/anmiaomiao/download/SRA_seq/SRR28210377_1.fastq.gz -I /data/gaoyunyun/project/anmiaomiao/download/SRA_seq/SRR28210377_2.fastq.gz -j temp/qc/SRR28210377_fastp.json -h temp/qc/SRR28210377_fastp.html -o temp/qc/SRR28210377_1.fastq.gz -O temp/qc/SRR28210377_2.fastq.gz --compression 6 
+fastp v0.23.4, time used: 427 seconds
