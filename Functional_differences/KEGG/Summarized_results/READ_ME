@@ -1,9 +1,10 @@
 
+因结果文件较大，将其上传至 百度网盘，访问链接如下：
 
 通过网盘分享的文件：KEGG.zip
 链接: https://pan.baidu.com/s/1-HvgfglvPlKAU-5wyZanOA?pwd=dwdb 提取码: dwdb
 
-
+#输出结果
 KEGG.KoDescription.raw.txt  #按照 KO 功能描述（L4）汇总的丰度数据
 KEGG.Pathway.raw.txt            #按照完整 KEGG Pathway（L3）汇总的丰度数据
 KEGG.PathwayL1.raw.txt        #KEGG 一级路径（如 Metabolism, Genetic Information Processing 等）汇总的丰度数据
