@@ -415,8 +415,8 @@ Rscript $sd/otutab_rare.R \
 
 #输入文件：result/kraken2/bracken.G.txt    属水平物种丰度表
           result/metadata.txt    样本分组信息
-#中间文件：result/lefse/lefse.txt   整合后用于LefSe分析的文件 
-          result/lefse/input.in   LEfSe 内部使用的输入格式
+#中间文件：result/lefse/lefse.txt   整合分组信息后用于LefSe分析的文件 
+          result/lefse/input.in   经转化后LEfSe 内部使用的输入格式
 #LefSe结果输出：result/lefse/input.res.txt 分析输出的结果文件，包括五列，分别是：显著差异物种的名称；各组中该物种平均丰度的最大值（log10）；物种富集的组名；LDA值；Kruskal-Wallis秩和检验的p值，若不是Biomarker用“-”表示。
 
 mkdir -p result/lefse/
