@@ -1,0 +1,8 @@
+输出文件：
+pathabundance.tsv     #将所有样本的通路丰度表合并成一张表
+pathabundance_unstratified.tsv   #纯功能丰度表，功能在所有物种中的总体丰度（不含物种信息）
+pathabundance_stratified.tsv    #包含每个菌对此功能通路组成的贡献，功能和对应物种关联的丰度表
+pathabundance_unstratified.pcl   #包含分组信息的通路丰度表格文件
+associate.txt     #组间比较只保留Q-value ≤ 0.05的统计结果表格
+df_all_results.csv    #将associate.txt和MetaCyc_pathway_map进行合并，给MetaCyc通路名称添加分类信息
+sig_df_top20.csv     #筛选Q-value ≤ 0.05且 |log2FC| 排名前20的通路
