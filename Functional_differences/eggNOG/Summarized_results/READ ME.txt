@@ -1,9 +1,0 @@
-result/humann/eggnog/eggnog.tsv    #合并后的所有样本eggNOG丰度矩阵（每列一个样本）
-eggnog_stratified.tsv    #含物种注释的分层eggNOG 表
-eggnog_unstratified.tsv     #纯eggNOG 功能总丰度表（无物种）
-
-
-
-eggnog_MaAsLin2_overall_difference.csv    #MaAsLin2分析输出的COG通路差异分析结果
-eggnog_MaAsLin2_enriched_depleted.csv    #MaAsLin2分析输出的COG通路富集/耗竭分组表
- 
