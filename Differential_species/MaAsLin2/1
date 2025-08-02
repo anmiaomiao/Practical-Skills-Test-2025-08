@@ -1,1 +1,2 @@
-
+MaAsLin2_overall_difference.csv    #对每一个微生物特征（属）与变量（Group）回归分析结果汇总表格     #Mean1 = HC；Mean2 = ID    MaAsLin2 根据分组变量在R里的字典排序，通常按字母顺序
+MaAsLin2_enriched_depleted.csv    #包含组间差异显著的特征和富集方向，用于下游可视化      p < 0.05 且 FC > 1，标记为depleted，在对照组 HC 中更高；p< 0.05 且 FC < 1，标记为enriched，在疾病组 ID 
