@@ -1,4 +1,4 @@
-
+输出文件：
 result/lefse/lefse.txt   整合分组信息后用于LefSe分析的文件
 result/lefse/input.in   经转换后LEfSe 内部使用的输入格式
 result/lefse/input.res.txt 分析输出的结果文件，包括五列，分别是：显著差异物种的名称；各组中该物种平均丰度的最大值（log10）；物种富集的组名；LDA值；Kruskal-Wallis秩和检验的p值，若不是Biomarker用“-”表示。
