@@ -1,0 +1,7 @@
+bracken.D.txt   #界（Kingdom）水平所有样本合并的物种丰度表(Bracken 结果)
+bracken.P.txt    #门（Phylum）水平所有样本合并的物种丰度表(Bracken 结果)
+bracken.C.txt    #纲（Class）水平所有样本合并的物种丰度表(Bracken 结果)
+bracken.O.txt   #目（Order）水平所有样本合并的物种丰度表(Bracken 结果)
+bracken.F.txt    #科（Family）水平所有样本合并的物种丰度表(Bracken 结果)
+bracken.G.txt   #属（Genus）水平所有样本合并的物种丰度表(Bracken 结果)
+bracken.S.txt    #种（Species）水平所有样本合并的物种丰度表(Bracken 结果)
